@@ -1,0 +1,22 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: hsl(212deg, 45%, 89%);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: ". . ." ". content ." ". . .";
+}
+
+.card {
+  grid-area: content;
+  background-color: hsl(0deg, 0%, 100%);
+}/*# sourceMappingURL=styles.css.map */

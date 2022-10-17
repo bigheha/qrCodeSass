@@ -1,0 +1,26 @@
+$hmax: 100%;
+
+html {
+    height: $hmax;
+}
+body {
+    background-color: hsl(212, 45%, 89%);
+    height: $hmax;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". . ."
+    ". content ."
+    ". . .";
+}
+
+.card {
+    grid-area: content;
+    background-color: hsl(0, 0%, 100%);
+}
