@@ -1,22 +1,99 @@
-html {
-  height: 100%;
+@media screen and (max-width: 1920px) {
+  html {
+    height: 100%;
+  }
+  body {
+    background-color: hsl(212deg, 45%, 89%);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 0.7vw;
+    font-family: "Montsserat", sans-serif;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 40vw 20vw 40vw;
+    grid-template-rows: 20vh 60vh 20vh;
+    grid-template-areas: ". . ." ". content ." ". . .";
+  }
+  .card {
+    grid-area: content;
+    background-color: hsl(0deg, 0%, 100%);
+    border-radius: 20px;
+  }
+  img {
+    height: 35.5vh;
+    width: 18vw;
+    position: relative;
+    top: 2vh;
+    left: 1vw;
+    border-radius: 15px;
+  }
+  h1 {
+    text-align: center;
+    padding: 1vw 1.5vw 0vw 1.5vw;
+    font-weight: 700;
+    font-size: 1.3vw;
+    color: hsl(218deg, 44%, 22%);
+    word-spacing: 0.1vw;
+  }
+  p {
+    text-align: center;
+    padding: 0vw 2vw 0vw 2vw;
+    font-weight: 400;
+    font-size: 0.85vw;
+    color: hsl(220deg, 15%, 55%);
+    word-spacing: 0.2vw;
+  }
 }
-
-body {
-  background-color: hsl(212deg, 45%, 89%);
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: ". . ." ". content ." ". . .";
-}
-
-.card {
-  grid-area: content;
-  background-color: hsl(0deg, 0%, 100%);
+@media screen and (max-width: 500px) {
+  html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+  body {
+    height: 100%;
+    width: 100%;
+    background-color: hsl(212deg, 45%, 89%);
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: "Montsserat", sans-serif;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 8vw 84vw 8vw;
+    grid-template-rows: 10vh 65vh 10vh;
+    grid-template-areas: ". . ." ". content ." ". . .";
+  }
+  .card {
+    grid-area: content;
+    background-color: hsl(0deg, 0%, 100%);
+    border-radius: 20px;
+  }
+  img {
+    height: 34.5vh;
+    width: 76vw;
+    position: relative;
+    top: 1.5vh;
+    left: 4vw;
+    border-radius: 15px;
+  }
+  h1 {
+    text-align: center;
+    padding: 3vh 2vw 0vw 2vw;
+    font-weight: 700;
+    font-size: 6vw;
+    color: hsl(218deg, 44%, 22%);
+    word-spacing: 0.1vw;
+  }
+  p {
+    text-align: center;
+    padding: 0vw 2vw 0vw 2vw;
+    font-weight: 400;
+    font-size: 4.5vw;
+    color: hsl(220deg, 15%, 55%);
+    word-spacing: 0.2vw;
+  }
 }/*# sourceMappingURL=styles.css.map */
